@@ -1,0 +1,350 @@
+//Task - 1
+class Task1{
+  public static void main(String[] args){
+  int num1=5;
+  int num2=7;
+  int num3=-5;
+  if(num1>num2 && num1>num3){
+    System.out.println("largest number: " + num1);
+  }
+  else if(num2>num3 && num2>num1){
+    System.out.println("largest number: " + num2);
+  }
+  else{
+    System.out.println("largest number: " + num3);
+  }
+  }
+}
+
+//Task - 2
+import java.util.Scanner;
+class Task2{
+  public static void main(String [] args){
+  Scanner myObj = new Scanner(System.in);
+  System.out.println("Enter the number");
+  int num1= myObj.nextInt();
+  if(num1>=90){
+      System.out.println("Your grade is A");
+  }
+  else if(num1>=85){
+    System.out.println("Your grade is A-");
+  }
+  
+  else if(num1>=70){
+    System.out.println("Your grade is B");
+  }
+  
+  else if(num1>=57){
+    System.out.println("Your grade is C");
+  }
+  
+  else if(num1>=50){
+    System.out.println("Your grade is D");
+  }
+  else{
+  System.out.println("Your grade is F");
+  }
+  }
+}
+
+
+//Task - 3
+import java.util.Scanner;
+class Task3{
+  public static void main(String [] mian){
+  Scanner newObj = new Scanner (System.in);
+  int num = newObj.nextInt();
+  if(num%5==0 && num%7==0){
+    System.out.println("Divisble by both");
+  }
+  else if(num%5==0 ){
+  System.out.println("Divisble by 5");
+  }
+   else if(num%7==0){
+  System.out.println("Divisble by 7");
+  }
+   else{
+   System.out.println("No");
+   }
+  }
+}
+
+
+//Task - 4
+import java.util.Scanner;
+class Task4{
+  public static void main(String [] args){
+  Scanner myObj = new Scanner (System.in);
+  int y = myObj.nextInt();
+  if ((y%4 == 0 && y%100!=0) || (y%400==0)){
+    System.out.println("Year is leapyear");
+  }
+  else{
+    System.out.println("Year is not leap year");
+  }
+  }
+}
+
+
+//Task - 5
+import java.util.Scanner;
+class Task5{
+  public static void main(String [] args){
+    Scanner myObj = new Scanner (System.in);
+    int num = myObj.nextInt();
+    if(num>0){
+      if(num%2==0){
+      System.out.println("Number is positive and even");
+      }
+      else{
+      System.out.println("Number is positive and odd");
+      }
+    }
+    else if(num<0){
+    System.out.println("Number is negative");
+    }
+    else{
+      System.out.println("Number is zero");
+    }
+  }
+}
+
+
+//Task - 6
+class Task6{
+  public static void main(String [] args){
+  int num = -2;
+  int result; 
+  if(num<0){
+  result=(2*num);
+  }
+  else if(num>=0 && num<2){
+    result = num+1;
+  }
+  else if(num>=2 && num<5){
+  result = ((num*num)-1);
+  }
+  else{
+  result = (3*(num*num)+2);
+  }
+  System.out.println(result);
+  }
+}
+
+
+//Task -7 
+class Task7{
+  public static void main(String [] args){
+  int id = 22104199;
+  int year = id/1000000;
+  int num1 = id/100000;
+  int num2 = num1%10;
+  if(num2==1){
+    System.out.println("Student joined BRAC in Spring " + year);
+  }
+  else if(num2==2){
+      System.out.println("Student joined BRAC in Fall " + year);
+  }
+  else{
+        System.out.println("Student joined BRAC in Summer " + year);
+  }
+  }
+}
+
+
+//Task - 8
+class Task8{
+  public static void main(String [] args){
+  int salary = 12000;
+  int age = 19;
+  double tax;
+  if(age>=18 && salary>=10000){
+    if(salary<=20000){
+      tax = (salary*(5.0/100));
+      System.out.println("Your Tax amounts in " + (int)tax + " Tk");
+    }
+    else{
+    tax = (salary*(10.0/100));
+          System.out.println("Your Tax amounts in " + (int)tax + " Tk");
+    }
+  }
+  else{
+    System.out.println("Your Tax amounts in 0 Tk");
+  }
+  }
+}
+
+
+
+//Task - 9
+class Task9{
+  public static void main(String [] args){
+  double a=26.45;
+  double b=0.02;
+  double c=13.56;
+  double largest;
+  double smallest;
+  if(a>b && a>c){
+    largest = a;
+  }
+  else if(b>a && b>c){
+    largest = b;
+  }
+  else{
+   largest = c;
+  }
+    if(a<b && a<c){
+    smallest = a;
+  }
+  else if(b<a && b<c){
+    smallest = b;
+  }
+  else{
+   smallest = c;
+  }
+  System.out.println("Maximum number is "+largest);
+    System.out.println("Minimum number is "+smallest);
+  }
+}
+
+
+//Task - 10
+class Task10{
+  public static void main(String [] args){
+    int a=1;
+    int b=6;
+    int c=5;
+    if(a==b && b==c){
+    System.out.println("This is a Equilateral triangle");
+    }
+    else if(a==b||a==c||b==c){
+    System.out.println("This is a Isosceles triangle");    
+    }
+    else{
+    System.out.println("This is a Scalene triangle");
+    }
+  }
+}
+
+
+//Task - 11
+class Task11{
+  public static void main(String [] args){
+  int money= 35;
+  int gave= 500;
+  
+  if(gave>money){
+    int hadToReturn = gave - money ;
+         int tk100=0;
+   int tk50=0;
+   int tk20=0;
+   int tk10=0;
+   int tk5=0;
+   int tk2=0;
+   int tk1=0;
+    while(hadToReturn>0){
+   
+    if(hadToReturn>=100){
+      tk100 = hadToReturn/100;
+      hadToReturn%=100;
+    }
+    else if(hadToReturn>=50){
+      tk50 = hadToReturn/50;
+      hadToReturn%=50;
+    }
+    else if(hadToReturn>=20){
+     tk20 = hadToReturn/20;
+      hadToReturn%=20;
+    }
+    else if(hadToReturn>=10){
+    tk10 = hadToReturn/10;
+      hadToReturn%=10;
+    }
+    else if(hadToReturn>=5){
+  tk5 = hadToReturn/5;
+      hadToReturn%=5;
+    }
+    else if(hadToReturn>=2){
+    tk2 = hadToReturn/2;
+      hadToReturn%=2;
+    }
+    else{
+     tk1 = hadToReturn;
+      hadToReturn%=1;
+    }
+  
+    }
+     System.out.println("The returned amount is " +hadToReturn+ " taka.");
+     System.out.println("100 taka note: " + tk100);
+     System.out.println("50 taka note: "+tk50);
+     System.out.println("20 taka note: "+tk20);
+     System.out.println("10 taka note: "+ tk10);
+     System.out.println("5 taka coin: "+tk5);
+     System.out.println("2 taka coin: "+tk2);
+     System.out.println("1 taka coin: "+tk1);
+
+  }
+  else if(gave<money){
+    int hadToPay = money - gave ;
+    System.out.println("Please pay " + hadToPay + " taka more.");
+  }
+  else{
+  System.out.println(" The returned amount is 0 taka.");
+  }
+  }
+}
+
+
+//Task - 12
+class Task12{
+  public static void main(String [] args){
+      int a=230;
+    int b=23;
+    int c=5;
+    if(a==b && b==c){
+    System.out.println("All numbers are equal");
+    }
+    else if(a==b||a==c||b==c){
+    System.out.println("Neither all are equal or different");    
+    }
+    else{
+    System.out.println("All numbers are different");
+    }
+  }
+}
+
+
+//Task - 13
+class Task13{
+  public static void main(String [] args){
+    for(int a=24;a>=-6;a-=6){
+    System.out.println(a);
+    }
+  } 
+}
+
+
+//Task - 14
+class Task14{
+  public static void main(String [] args){
+     for(int a=-10;a<=20;a+=5){
+    System.out.println(a);
+    }
+  }
+}
+
+
+//Task - 15
+class Task15{
+  public static void main(String [] args){
+    double sum = 0;
+    for(double a = 1.0 ; a<=200 ; a++){
+      sum+=a;
+    }
+    double avg = sum/200;
+     System.out.println(sum);
+      System.out.println(avg);
+  }
+}
+
+

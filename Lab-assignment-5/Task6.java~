@@ -1,0 +1,26 @@
+//Task-6
+import java.util.Scanner;
+class Task6{
+  public static void main(String [] args){
+  Scanner obj = new Scanner(System.in);
+  String word = obj.nextLine();
+  int length = word.length();
+  String main ="";
+  for(int i=(length-1);i>=0;i--){
+    char single = word.charAt(i);
+    if(single==" "){
+      main+=single;
+    }
+    else{
+      String second = "";
+      second+=single;
+      for(int i=((second.length())-1);i>=0;i--){
+        char single2 = second.charAt(i);
+        main+=single;
+      }
+    }
+  }
+  System.out.println(main);
+  
+}
+}

@@ -1,0 +1,30 @@
+//Task - 9
+class Task9{
+  public static void main(String [] args){
+  int a=18.83;
+  int b=-4.02;
+  int c=83.12;
+  int largest;
+  int smallest;
+  if(a>b && a>c){
+    largest = a;
+  }
+  else if(b>a && b>c){
+    largest = b;
+  }
+  else{
+   largest = c;
+  }
+    if(a<b && a<c){
+    smallest = a;
+  }
+  else if(b<a && b<c){
+    smallest = b;
+  }
+  else{
+   smallest = c;
+  }
+  System.out.println("Maximum number is "+largest);
+    System.out.println("Minimum number is "+smallest);
+  }
+}

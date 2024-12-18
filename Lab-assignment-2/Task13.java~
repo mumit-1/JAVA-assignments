@@ -1,0 +1,8 @@
+class Task13{
+  public static void main(String [] args){
+  int a = 24;
+  while(a<-6){
+  System.out.println(a)
+  }
+  } 
+}

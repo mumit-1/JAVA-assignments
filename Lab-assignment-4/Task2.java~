@@ -1,0 +1,11 @@
+import java.util.Scanner;
+class Task2{
+  public static void main(String [] args){
+  Scanner obj = new Scanner(System.in);
+  int num1 = obj.nextInt();
+  while(num1>=0){
+    System.out.println("result: " + ( num1 * num1 ) );
+  num1 = obj.nextInt();
+  }
+  }
+}

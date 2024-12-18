@@ -1,0 +1,12 @@
+//Task-11
+import java.util.Scanner;
+class Task11{
+public static void main (String [] args){
+Scanner obj = new Scanner(System.in);
+System.out.print("Start :");
+int num1 = obj.nextInt();
+System.out.println(" ");
+System.out.print("End :");
+int num2 = obj.nextInt();
+}
+}

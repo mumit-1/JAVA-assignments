@@ -1,0 +1,260 @@
+//Task-1 
+class Task1{
+  public static void main(String [] args){
+    for(int i=18;i<=63;i+=9){
+    if(i!=63)System.out.print(i+",");
+    else System.out.println(i);
+    }
+  }
+}
+
+
+//Task-2
+class Task2{
+  public static void main(String []args){
+    int extra = -1;
+      for(int i=18;i<=63;i+=9){
+        extra*=-1;
+    if(i!=63)System.out.print(extra*i+",");
+    else System.out.println(extra*i);
+  }
+}
+}
+
+
+//Task-3
+class Task3{
+  public  static void main(String [] args){
+    int sum=0;
+    for(int i=1;i<=600;i++){
+      if(i%7==0 && i%9==0){
+        sum+=i;
+      }
+    }
+    System.out.println(sum);
+  }
+}
+
+
+//Task-4
+class Task4{
+  public static void main(String [] args){
+      int sum=0;
+    for(int i=1;i<=600;i++){
+      if(i%7==0 || i%9==0){
+        sum+=i;
+      }
+    }
+    System.out.println(sum);
+  }
+}
+
+
+//Task-5
+class Task5{
+  public static void main(String [] args){
+      int sum=0;
+    for(int i=1;i<=600;i++){
+      if((i%7==0 || i%9==0) && !(i%7==0 && i%9==0)){
+        sum+=i;
+      }
+    }
+    System.out.println(sum);
+  }
+}
+
+//Task-6
+class Task6{
+  public static void main(String [] args){
+    int sum = 0;
+    int n=20;
+    int extra =-1;
+     for(int i=1;i<=n;i++){
+      extra*=-1;
+      sum+=(i*i*extra);
+     }
+    System.out.println(sum);
+  }
+}
+
+
+//Task-7
+class Task7{
+  public static void main(String [] main){
+  int n=6;
+  int count=0;
+  System.out.println("Divisors of :" + n);
+  for(int i=1;i<=n;i++){
+    if(n%i==0){
+      count++;
+    System.out.println(i);
+    }
+  }
+  System.out.println("Total Divisors: "+count);
+  }
+}
+
+
+//Task- 8
+class Task8{
+  public static void main(String [] args){
+  int count = 1;
+  int n=5;
+  int sum=0;
+   System.out.println("The odd numbers are:  ");
+  for(int i=1;count<=n;i++){
+    if(i%2==1){
+   
+    count++;
+    System.out.println(i);
+    sum+=i;
+    }
+  }
+  System.out.println("The Sum of odd Natural Numbers up to "+n+" terms is: "+sum);
+  }
+}
+
+
+//Task - 9
+class Task9{
+  public static void main(String [] args){
+  int sum=0;
+  for(int i=1;i<=10;i++){
+    sum+=i;
+    System.out.println("Current Number: "+i+", Sum: "+sum);
+  }
+  }
+}
+
+
+//Task - 10
+class Task10{
+  public static void main(String [] args){
+    int n=40;
+    for(int i=1;i<=40;i++){
+      if((i%5==0)&& !(i%3==0)){
+      System.out.println(i);
+      }
+    }
+  }
+}
+
+
+//Task-11
+class Task11{
+  public static void main(String [] args){
+  int n=3456;
+  int count = 0;
+  while(n>0){
+  n = n/10;
+  count++;
+  }
+  System.out.println("Total Digits = "+count);
+  }
+}
+
+
+
+//Task - 12
+class Task12{
+  public static void main(String [] args){
+  int n = 1234;
+  int use1 = n;
+  int use2 = n;
+  int count = 0;
+  while(use1>0){
+    count++;
+    use1/=10;
+  }
+  int count2 =0;
+  while(use2>0){
+  int result = use2%10;
+  count2++;
+  use2/=10;
+  if(count!=count2)System.out.print(result+",");
+  else System.out.print(result);
+  }
+  }
+}
+
+
+
+//Task - 13
+class Task13{
+  public static void main(String [] args){
+    int n = 32768;
+  int use1 = n;
+  int use2 = n;
+  int count = 0;
+  while(use1>0){
+    count++;
+    use1/=10;
+  }
+  System.out.println(count);
+ 
+   int need = 1;
+  for(int i=1;i<count;i++){
+   need*=10;
+  }
+  
+  int count2=0;
+  while(use2>0){
+   int result=use2/need;
+    use2%=need;
+    need/=10;
+     count2++;
+     
+   if(count!=count2)System.out.print(result+",");
+   else System.out.print(result);
+  }
+}
+}
+
+
+
+//Task - 14
+class Task14{
+  public static void main(String [] args){
+  int n=29;
+    int count = 0;
+for(int i=1;i<10;i++){
+  if(n%i==0){
+   count++;
+  }
+}
+     if(count<=2){
+     System.out.println(n+" is a prime number.");
+   }
+   else{
+        System.out.println(n+" is not a prime number.");
+   }
+}
+}
+
+
+
+//Task - 15
+class Task15{
+  public static void main(String [] main){
+  int n=6;
+    int sum=0;
+for(int i=1;i<=n;i++){
+  if(n%i==0 && n!=i){
+      System.out.println(i);
+      sum+=i;
+  }
+}
+if(sum==n) System.out.println(n+" is a perfect number");
+else System.out.println(n+" is not a perfect number");
+  }
+}
+
+
+
+
+
+
+
+
+
+

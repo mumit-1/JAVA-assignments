@@ -1,0 +1,19 @@
+//Task - 6
+import java.util.Scanner;
+class Task6{
+  public static void main(String [] args){
+  Scanner obj = new Scanner(System.in);
+  System.out.print("Enter Number :");
+  int  num1 = obj.nextInt();
+  if(num1%2==0 && num1>0){}
+  for(int i=1;i<=num1;i++){
+    int count=0;
+    if(num1%i==0){
+    if(i%2==0) count++;
+    else break;
+    }
+    System.out.print(num1 + " has " + count + " divisors");
+  }
+  }
+  }
+}

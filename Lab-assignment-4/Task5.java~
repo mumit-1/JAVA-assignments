@@ -1,0 +1,19 @@
+//Task - 5
+import java.util.Scanner;
+class Task5{
+  public static void main(String [] args){
+  Scanner obj = new Scanner(System.in);
+  System.out.print("Enter Number :");
+  int  num1 = obj.nextInt();
+  int sumMain = 0;
+  for(int i=1;i<=num1;i++){
+    int sum =0;
+    for(int a=1;a<=i;a++){
+    sum+=a;
+    }
+    sum*=-1;
+    sumMain+=sum;
+  }
+  
+  }
+}

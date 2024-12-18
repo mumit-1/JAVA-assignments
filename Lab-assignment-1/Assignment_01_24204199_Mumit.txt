@@ -1,0 +1,193 @@
+// Task - 10
+class Task_one{
+  public static void main (String [] args){
+ int hungry; //it is valid
+ int 2AB; // it is invalid . Variable name cant start with number
+ int 312.12; // it is invalid . Variable name cant start with number
+ int MOBILE; //it is valid
+ int "Ans"; // it is invalid . Variable name can't have special character like ' " " ' 
+ int $30; // it is invalid . Variable name cant have special character like ' $ '
+ int Yes?No; // it is invalid . variable can't have special characters like ' ? '
+ int student-id; // it is invalid . Variable name can't have special character ' - '
+ int A+3; // it is invalid . Variable name can't have special character ' + '
+ int "X"; // it is invalid . Variable name can't have special character ' " " '
+ int return; // it is invalid . 'return' is reserved word for java so it can't sit as variable name
+  }
+}
+
+
+// Task - 11
+class Task_two {
+  public static void main(String [] args){
+  // 2.1
+    int num1 = 5;
+    System.out.println(num1);
+  // 2.2
+    int num2 = 7;
+    System.out.println(num1 + num2);
+  // 2.3
+     System.out.println(num1 * num2);
+      System.out.println(num2 / num1);
+  // 2.4
+        double num3 = 5;
+        double num4 = 7;
+        System.out.println(num3 + num4);
+        System.out.println(num3 * num4);
+        System.out.println(num4 / num3);
+  //2.5
+        double num5 = 5;
+        int num6 = 7;
+        System.out.println(num5 + num6);
+        System.out.println(num5 * num6);
+        System.out.println(num6 / num5);
+  // 2.6
+     
+    String numA = "5";
+    System.out.println(num1);
+
+    String numB = "5";
+    System.out.println(numA + numB);
+      System.out.println(num2 + numB);
+  }
+}
+
+//Task - 12
+import java.lang.Math;
+class Task_three{
+  public static void main(String [] args){
+   int radius = 4;
+   double circumf = 2*Math.PI*radius;
+   double area = Math.PI * radius * radius;
+   System.out.println("Ciccumference:" + circumf);
+   System.out.println("Area:" + area);
+  }
+}
+
+
+//Task - 13
+import java.util.Scanner;
+class Task_four{
+  public static void main(String [] args){
+  Scanner myObj = new Scanner(System.in);
+    System.out.println("Enter number");
+    int number = myObj.nextInt();
+    int newNumber = number % 100;
+    System.out.println("last two digit is :" + newNumber);
+  }
+}
+
+
+// Task - 14
+import java.util.Scanner;
+class Text_Five{
+  public static void main (String [] args){
+   Scanner myObj = new Scanner(System.in);
+   System.out.println("Given a value for inch:");
+   double number = myObj.nextInt();
+   double newNumber = number * 0.0254 ;
+   System.out.println(number +" inch is " + newNumber);
+  }
+}
+
+
+
+//Task - 15
+class Text_six{
+  public static void main(String [] args){
+//a
+  int a=1;
+  int b=3;
+  int c = a;
+  a = b;
+  b = c;
+  System.out.println(a);
+    System.out.println(b);
+//b
+  int x = 5;
+  int y = 6;
+  x = (x+y);
+  y = (x-y);
+  x = (x-y);
+  System.out.println(x);
+  System.out.println(y);
+  }
+}
+
+
+
+//Task - 16
+import java.util.Scanner;
+class Task_Seven{
+  public static void main (String [] args){
+  Scanner myObj = new Scanner(System.in);
+  System.out.println("Enter minute");
+  int number = myObj.nextInt();
+  int year = number / 525600;
+  int putting = number % 525600;
+  int days = putting / 1440;
+  System.out.println(number + " minutes is approximately "+year+" years and "+days+" days");
+  }
+}
+
+
+
+//Task - 17
+class Task_Eight{
+  public static void main(String [] args){
+  int a = 2;
+  int b = 5;
+  int c = 8;
+  int d = ((2*b) * ((c-a)/3)) + 7;
+  System.out.println(d);
+  }
+}
+
+
+// Task - 18
+import java.util.Scanner;
+class Task_Nine{
+  public static void main(String [] args){
+  Scanner myObj = new Scanner(System.in);
+  System.out.println("Enter number");
+  int a = myObj.nextInt();
+  int b = a % 10;
+  int c = a / 10;
+  int d = c % 10;
+  System.out.println(b);
+  System.out.println(d);
+  }
+}
+
+
+// Task - 19
+import java.lang.Math;
+class Tast_Ten{
+  public static void main(String [] args){
+  int a = 8;
+  int b = 3;
+  int calc1 = (((a/2) * (a/2)) + (3 * 3));
+  double calc2 = Math.sqrt(calc1);
+  double area1 = calc2 * a ;
+  double area2 = (0.5) * b * a ;
+  System.out.println((area2*2)+area1);
+  }
+}
+
+
+//Task - 20
+class Task_Eleven{
+  public static void main(String [] args){
+  double a= 4.5;
+  double b= 9.5;
+  double calc1 = (((a/2) * (a/2)) + (3 * 3));
+  double c = Math.sqrt(calc1);
+  double sinA= (a/c);
+  double sinB= (b/c);
+  double cosA= (b/c);
+  double cosB= (a/c);
+  System.out.println("sinA: "+sinA);
+    System.out.println("sinB: "+sinB);
+      System.out.println("cosA: "+cosA);
+        System.out.println("cosB: "+cosB);
+  }
+}

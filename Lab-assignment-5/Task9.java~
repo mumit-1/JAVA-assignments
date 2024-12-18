@@ -1,0 +1,54 @@
+//Task-09
+import java.util.Scanner;
+class Task9{
+  public static void main(String [] args){
+  Scanner obj = new Scanner (System.in);
+  String word = obj.nextLine();
+  int count = 0;
+  boolean eight ;
+  boolean small ;
+  boolean big ;
+  boolean num ;
+  boolean special ;
+  if(word.length>=8){
+    eight = true;
+  for(int i=0;i<(word.length());i++){
+    int ascii = (int) word.charAt(i);
+    if(i>=33 && i<=126){
+    if((i>=65&&i<=90) || (i=>97&&i<=122) || (i=>48&&i<=57)){
+    if(i>=65&&i<=90){
+      int count = 0;
+    count++;
+    if(count>0){
+      big=true;
+    }
+    }
+    if(i=>97&&i<=122){
+      int count = 0;
+    count++;
+    if(count>0){
+      small=true;
+    }
+    }
+      if(i=>48&&i<=57){
+        int count = 0;
+    count++;
+    if(count>0){
+      num=true;
+    }
+    }
+  }
+    else{
+      int count = 0;
+    count++;
+    if(count>0){
+      special=true;
+    }
+    
+    }
+  }
+  }
+  }
+  System.out.println(eight && big && small && number && number);
+  }
+}
