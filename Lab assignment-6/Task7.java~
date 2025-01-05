@@ -1,0 +1,31 @@
+//Task-7
+
+class Task7{
+  public static void main(String [] args){
+   int arr [] = {23,100,23,56,100};
+   for (int i = 0; i < arr.length; i++) {
+      System.out.print(arr[i] + " ");
+    }
+    System.out.println();
+     int n = 0;
+    int[] array2 = new int[arr.length];
+       
+    for (int i = 0; i < arr.length; i++) {
+      boolean check = false;
+      for (int j = 0; j < n; j++) {
+        if (arr[i] == array2[j]) {
+          check = true;
+          break;
+        }
+      }
+      if (!check) {
+        array2[n++] = arr[i];
+      }
+    }
+    System.out.println("New array: ");
+    for (int i = 0; i < n; i++) {
+      System.out.print(array2[i]+" ");
+    }
+    System.out.println();
+  }
+}

@@ -1,0 +1,335 @@
+//Task-01
+import java.util.Scanner;
+class Task1{
+  public static void main(String [] args){
+  Scanner obj = new Scanner(System.in);
+  String word = obj.nextLine();
+  for(int i=0;i<word.length();i++){
+    
+    int ascii = (int) word.charAt(i);
+    if((97<=ascii) && (ascii<=122)){
+      ascii -=32;
+    char word2 = (char) ascii ;
+    System.out.print(word2);
+  }
+    else{
+    System.out.print(word.charAt(i));
+    }
+  }
+  System.out.println(" ");
+ 
+}
+}  
+
+
+
+
+//Task-2
+import java.util.Scanner;
+class Task2{
+  public static void main(String [] args){
+  Scanner obj = new Scanner(System.in);
+  String word = obj.nextLine();
+  String a=""; 
+  String b="";
+  int num1 = word.length();
+  for(int i=(num1-1);i>=((num1+1)/2);i--){
+    int ascii = (int) word.charAt(i);
+    if(97<=ascii && ascii<=122){
+      char aX = (char) ascii;
+      a+= aX;
+    }
+    else{
+     ascii+=32;
+           char aX = (char) ascii;
+      a+= aX;
+    }
+  }
+    for(int i=0;i<((num1/2));i++){
+    int ascii = (int) word.charAt(i);
+    if(97<=ascii && ascii<=122 ){
+      char bX = (char) ascii;
+      b+=bX;
+      
+    }
+      else{
+         ascii+=32;
+           char bX = (char) ascii;
+      b+= bX;
+      }
+    
+    }
+      if(a.equals(b)) System.out.println(true);
+        else System.out.println(false);
+        obj.close();
+  }
+}
+
+
+//task-3
+import java.util.Scanner;
+class Task3{
+  public static void main(String [] args){
+  Scanner obj = new Scanner (System.in);
+  String word = obj.nextLine();
+  String split = obj.next();
+  int length = word.length();
+  for(int i=0;i<(length);i++){
+    int ascii = (int) word.charAt(i);
+    int ascii2 = (int) split.charAt(0);
+    if(ascii==ascii2){
+      System.out.println(" ");
+    }
+    else{
+      System.out.print(word.charAt(i));
+    }
+  }
+  System.out.println(" ");
+  }
+}
+
+
+
+//Task-4
+import java.util.Scanner;
+class Task4{
+  public static void main(String [] args){
+  Scanner obj = new Scanner(System.in);
+  String word = obj.nextLine();
+  int length = word.length();
+  for(int i=(length-1);i>=0;i--){
+   System.out.print(word.charAt(i));
+  }
+  System.out.println(" ");
+  }
+}
+
+
+
+//Task-5
+import java.util.Scanner;
+class Task5{
+  public static void main(String [] args){
+  Scanner obj = new Scanner(System.in);
+  String word = obj.nextLine();
+  int length = word.length();
+  String vowel = "";
+  String cons = "";
+  for(int i=(length-1);i>=0;i--){
+   int x = (int) word.charAt(i);
+   if((x>=97 && x<=122) || (x<=(122-32) && x>=(97-32))){
+     if(x==97 || x==101 || x==105 || x==111 || x==117 || x==97-32 || x==101-32 || x==105-32 || x==111-32 || x==117-32){
+     char single = (char) x;
+      vowel+=single;
+      
+   }
+   else{
+   char single = (char) x;
+      cons+=single;
+      
+   }
+    
+  }
+  }
+  
+  if(((vowel.length())%3==0)&&((cons.length())%5==0)){
+  if(((vowel.length())>0 && (cons.length())>0)){
+  System.out.println("Aaarr! Me Plunder!!");
+  }
+   else{
+  System.out.println("Blimey! No Plunder!!");
+  }
+  }
+  else{
+  System.out.println("Blimey! No Plunder!!");
+  }
+  
+}
+}
+
+
+
+//Task-6
+import java.util.Scanner;
+class Task6{
+  public static void main(String [] args){
+  Scanner obj = new Scanner(System.in);
+  String word = obj.nextLine();
+  int length = word.length();
+  String main ="";
+  String second = "";
+  for(int i=(length-1);i>=0;i--){
+    
+    int ascii = (int) word.charAt(i);
+    if(ascii==32){
+      
+     for(int f=(second.length()-1);f>=0;f--){
+      main+=second.charAt(f);
+      }
+      main+=(char) ascii;
+       second="";
+    }
+    else{
+      char single = (char) ascii;
+      
+      second+=single;
+      
+    }
+  }
+  for(int f=(second.length()-1);f>=0;f--){
+      main+=second.charAt(f);
+      }
+  System.out.println(main);
+  
+}
+}
+
+
+
+
+//Task-07
+import java.util.Scanner;
+class Task7{
+  public static void main(String [] args){
+  Scanner obj = new Scanner (System.in);
+  String word = obj.nextLine();
+  String word2 = obj.nextLine();
+  String word3 = "";
+  int n = 0;
+  while(n<2){
+  for(int i=0;i<(word.length());i++){
+  int a = (int) word.charAt(i);
+  int count=0;
+  for(int k=0;k<(word2.length());k++){
+    int b = (int) word2.charAt(k);
+    
+    if(b==a){
+      count++;  
+    }
+    
+  }
+  if(count==0){
+    if(a>=97 && a<=122){
+    word3+= (char) (a-32) ;
+    }
+    else{
+    word3+= (char)a ;
+    }
+  }
+  }
+  n++;
+ 
+  String wordNeed = word;
+   word = word2;
+  word2 = wordNeed;
+  }
+  
+  System.out.println(word3);
+  }
+}
+
+
+
+
+
+//Task-08
+import java.util.Scanner;
+class Task8{
+  public static void main(String [] args){
+  Scanner obj = new Scanner (System.in);
+  String word = obj.nextLine();
+  int count = 1;
+  String result ="";
+  for(int i=0;i<word.length();i++){
+  int ascii = (int) word.charAt(i);
+  if((ascii>=97 && ascii<=122) || (ascii>=97-32 && ascii<=122-32)){
+    if(count==1){
+      if((ascii>=97 && ascii<=122)){
+      result+= (char) ascii;
+     
+      }
+      else{
+      result+= (char) (ascii+32);
+      
+      }
+      count*=(-1);
+    }
+    else{
+      if((ascii>=97 && ascii<=122)){
+      result+= (char) (ascii-32);
+      
+      }
+      else{
+      result+= (char) ascii;
+      
+      }
+      count*=(-1);
+    }
+  }
+  else{
+  result+= (char) ascii;
+  }
+  }
+  System.out.println(result);
+  }
+}
+
+
+
+
+
+
+//Task-09
+import java.util.Scanner;
+class Task9{
+  public static void main(String [] args){
+  Scanner obj = new Scanner (System.in);
+  String word = obj.nextLine();
+  
+  boolean eight =false;
+  boolean small =false;
+  boolean big =false;
+  boolean num =false;
+  boolean special =false;
+  if(word.length()>=8){
+    eight = true;
+  for(int i=0;i<(word.length());i++){
+    int ascii = (int) word.charAt(i);
+    if(ascii>=33 && ascii<=126){
+    if((ascii>=65 && ascii<=90) || (ascii>=97 && ascii<=122) || (ascii>=48 && ascii<=57)){
+    if(ascii>=65&&ascii<=90){
+      int count = 0;
+    count++;
+    if(count>0){
+      big=true;
+    }
+    }
+    if(ascii>=97&&ascii<=122){
+      int count = 0;
+    count++;
+    if(count>0){
+      small=true;
+    }
+    }
+      if(ascii>=48&&ascii<=57){
+        int count = 0;
+    count++;
+    if(count>0){
+      num=true;
+    }
+    }
+  }
+    else{
+      int count = 0;
+    count++;
+    if(count>0){
+      special=true;
+    }
+    
+    }
+  }
+  }
+  }
+  System.out.println(eight && big && small && num && special);
+  }
+}

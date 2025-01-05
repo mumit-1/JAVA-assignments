@@ -1,0 +1,34 @@
+//Task - 10
+
+class Task10{
+  public static void main(String [] args){
+    int [] array1 = {85, 90, 75, 44, 99};
+    String [] array2 = {"Bob", "Alice", "Max", "Marry", "Rosy"};
+    for(int i=0;i<array1.length;i++){
+      System.out.print("Enter a number: ");
+    array1[i]=obj.nextInt();
+    }
+    System.out.println("Original Array: ");
+    for(int i=0;i<array1.length;i++){
+      System.out.print(array1[i]+" ");
+    }
+    for(int i=0;i<array1.length;i++){
+      for(int k=i+1;k<array1.length;k++){
+        if(array1[i]>array1[k]){
+          int x = array1[i];
+          array1[i]=array1[k];
+          array1[k]=x;
+          String y = array2[i];
+          array2[i]=array2[k];
+          array2[k]=y;
+        }
+      }
+    }
+    System.out.println();
+    System.out.println("Sorted Array: ");
+      for(int i=0;i<array1.length;i++){
+      System.out.print(array1[i]+" ");
+    }
+    System.out.println();
+  }
+}

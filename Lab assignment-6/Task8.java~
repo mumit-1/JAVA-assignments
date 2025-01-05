@@ -1,0 +1,19 @@
+//Task-8
+import java.util.Scanner;
+class Task8{
+  public static void main(String [] args){
+    Scanner obj = new Scanner(System.in);
+    System.out.print("Please enter the length of the array 1: ");
+    int[] array1 = obj.nextInt();
+    System.out.println("Please enter the elements of the arr1: ");
+    for(int i=0;i<array1.length;i++){
+    array1[i]=obj.nextInt();
+    }
+     System.out.print("Please enter the length of the array 2: ");
+    int[] array2 = obj.nextInt();
+    System.out.println("Please enter the elements of the arr2: ");
+    for(int i=0;i<array2.length;i++){
+    array2[i]=obj.nextInt();
+    }
+  }
+}
